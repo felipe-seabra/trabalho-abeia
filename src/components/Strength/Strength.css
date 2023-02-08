@@ -8,13 +8,40 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
 input {
   width: 300px;
+  border: 2px solid black;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  margin-bottom: 10px;
 }
 
-.hiden {
+button {
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.btn {
+  background-color: #dc143c;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: transform 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+
+.hidden {
   display: none;
 }

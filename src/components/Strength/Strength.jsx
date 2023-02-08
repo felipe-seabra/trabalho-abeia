@@ -11,7 +11,7 @@ function Strength() {
   const [correctLetters, setCorrectLetters] = useState([]);
   const [message, setMessage] = useState('');
   const [hiden, setHiden] = useState('');
-  const [notHiden, setNotHiden] = useState('hiden');
+  const [notHiden, setNotHiden] = useState('hidden');
   const [value, setValue] = useState('');
 
   const handleSubmit = (e) => {
@@ -20,7 +20,7 @@ function Strength() {
     const secretWord = e.target.secretWord.value;
     setWord(secretWord.toUpperCase());
     setHiddenWord(hiddenWord.length < 1 ? '_ '.repeat(secretWord.length) : hiddenWord);
-    setHiden('hiden');
+    setHiden('hidden');
     setNotHiden('');
     setValue('');
 
@@ -62,6 +62,7 @@ function Strength() {
   return (
     <div className="container">
       <h2>Jogo da Forca</h2>
+      <br />
       <form onSubmit={ handleSubmit }>
         <input
           type="text"
@@ -77,7 +78,7 @@ function Strength() {
           value={ value }
           onChange={ (e) => setValue(e.target.value) }
         />
-        <button type="submit">Enviar</button>
+        <button className="btn" type="submit">Enviar</button>
       </form>
       <p>
         Palavra:
