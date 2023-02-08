@@ -9,14 +9,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  height: 100vh;
+  background: linear-gradient(185deg, rgb(228, 228, 230), rgb(114, 108, 126));
 }
 
 input {
   width: 300px;
   border: 2px solid black;
   font-weight: bold;
-  padding: 10px 25px;
+  padding: 10px;
   border-radius: 25px;
   margin-bottom: 10px;
 }
@@ -49,4 +50,5 @@ button {
 .red {
   color: red;
   font-weight: 600;
+  text-decoration: underline;
 }

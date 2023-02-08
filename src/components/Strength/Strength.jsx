@@ -14,11 +14,11 @@ function Strength() {
   const [notHiden, setNotHiden] = useState('hidden');
   const [value, setValue] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const letterOrWord = e.target.letterOrWord.value.toUpperCase();
     const secretWord = e.target.secretWord.value;
-    setWord(secretWord.toUpperCase());
+    await setWord(secretWord.toUpperCase());
     setHiddenWord(hiddenWord.length < 1 ? '_ '.repeat(secretWord.length) : hiddenWord);
     setHiden('hidden');
     setNotHiden('');
@@ -80,13 +80,13 @@ function Strength() {
         />
         <button className="btn" type="submit">Enviar</button>
       </form>
-      <p>
+      <p className={ notHiden }>
         Palavra:
         {' '}
         <strong>{hiddenWord}</strong>
       </p>
       <br />
-      <p>
+      <p className={ notHiden }>
         Tentativas restantes:
         {' '}
         <span className="red">{remainingAttempts}</span>
