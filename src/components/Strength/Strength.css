@@ -27,7 +27,7 @@ button {
 }
 
 .btn {
-  background-color: #dc143c;
+  background-color: rgb(88, 166, 255);
   color: #fff;
   text-decoration: none;
   border: 2px solid transparent;
