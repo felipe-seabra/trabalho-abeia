@@ -45,3 +45,8 @@ button {
 .hidden {
   display: none;
 }
+
+.red {
+  color: red;
+  font-weight: 600;
+}

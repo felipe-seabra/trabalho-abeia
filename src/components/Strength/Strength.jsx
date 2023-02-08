@@ -83,13 +83,13 @@ function Strength() {
       <p>
         Palavra:
         {' '}
-        {hiddenWord}
+        <strong>{hiddenWord}</strong>
       </p>
       <br />
       <p>
         Tentativas restantes:
         {' '}
-        {remainingAttempts}
+        <span className="red">{remainingAttempts}</span>
       </p>
       <br />
       <p>{message}</p>
